@@ -1,0 +1,11 @@
+# VS code
+.vscode/
+
+# logging
+LOGGER.log
+
+# pythong cache
+__pycache__
+
+# CSV files
+*.csv*
