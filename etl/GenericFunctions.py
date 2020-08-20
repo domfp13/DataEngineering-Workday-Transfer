@@ -15,7 +15,7 @@ def getPath(file_name:str):
     return Path(getcwd(),'out',file_name)
 
 def decoratorCopyFileToAnotherLocalDestination(function):
-    def wrapper():
+    def wrapper(filein:Path):
         from os import system
         system("""copy {} D:\QlikData\HR_Data\\ /Y""".format(filein))
     return wrapper

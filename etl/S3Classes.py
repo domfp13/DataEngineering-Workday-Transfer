@@ -10,7 +10,7 @@ class S3Client:
         self.client = self.getS3Client()
     
     def decoratorGetS3Client(function):
-        def wrapper():
+        def wrapper(self):
             import boto3
             return boto3.client('s3', aws_access_key_id='', aws_secret_access_key='')
         return wrapper
